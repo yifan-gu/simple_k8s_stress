@@ -1,0 +1,14 @@
+# Copy of pod.yaml without file extension for test
+apiVersion: v1
+kind: Pod
+metadata:
+  name: busybox
+  labels:
+    name: busybox
+spec:
+  hostNetwork: True
+  containers:
+  - name: busybox
+    image: busybox
+    command:
+    - /bin/date
